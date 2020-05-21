@@ -26,10 +26,10 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        onIncrementCounter: () => dispatch({type: 'INCREMENT'}), 
-        onDecrementCounter: () => dispatch({type: 'DECREMENT'}), 
-        onAddFiveCounter: () => dispatch({type: 'ADD_FIVE'}), 
-        onSubtractFiveCounter: () => dispatch({type: 'SUBTRACT_FIVE'}) 
+        onIncrementCounter: () => dispatch({type: 'INCREMENT', payload: 10}), 
+        onDecrementCounter: () => dispatch({type: 'DECREMENT', val: 5}), 
+        onAddFiveCounter: () => dispatch({type: 'ADD_FIVE', val: 5}), 
+        onSubtractFiveCounter: () => dispatch({type: 'SUBTRACT_FIVE', val: 5}) 
     };
 };
 
